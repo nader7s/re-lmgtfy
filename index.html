@@ -65,7 +65,7 @@
           function copyit() {
             try {
               var successful = document.execCommand('copy');
-              var msg = successful ? 'Link successfully copied to clipboard' : 'JavaScript copy not supported -- Please use Ctrl-C to copy the text.';
+              var msg = successful ? 'لینک با موفقیت کپی شد' : 'JavaScript copy not supported -- Please use Ctrl-C to copy the text.';
               document.getElementById('copymsg').innerHTML = msg;
             } catch (err) {
               console.log('unable to copy using document.execCommand(copy)');
@@ -75,7 +75,7 @@
     </head>
     <body>
         <center>
-            <div id="tut">What do you want it to Google search?</div>
+            <div id="tut">چه چیزی را می خواهید در گوگل جستجو کنید?</div>
             <br>
             <input type="text" id="googlehere">
             <br>
@@ -86,14 +86,14 @@
             <script>
                 document.getElementById("googlehere").onkeyup = function() {
                    if(this.value.length != 0) {
-                       document.getElementById("urlhere").value = "https://arinerron.github.io/re-lmgtfy/go.html?q=" + encodeURIComponent(this.value);
+                       document.getElementById("urlhere").value = "https://nader7s.github.io/re-lmgtfy/go.html?q=" + encodeURIComponent(this.value);
                    } else {
                        document.getElementById("urlhere").value = "";
                    }
                    //document.getElementById("urlhere").value = this.value;  
                 }
             </script>
-            <p><div id="copymsg">Click the link to copy it to your clipboard</div></p>
+            <p><div id="copymsg">روی لینک کلیک کنید تا کپی شود!</div></p>
         </center>
     </body>
 </html>
